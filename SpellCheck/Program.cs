@@ -45,11 +45,11 @@ namespace SpellCheck
         }
         public static void help()
         {
-            System.Console.Write("SpellCheck.exe <path-to-compare> [path-to-dictionary]");
-            System.Console.Write("    <path-to-compare>     path to file to spell check");
-            System.Console.Write("    [path-to-dictionary]  path to file to use as dictionary");
-            System.Console.Write("    --make                optional parameter to create dictionary file (requires internet access)");
-            System.Console.Write("");
+            System.Console.WriteLine("SpellCheck.exe <path-to-compare> [path-to-dictionary]");
+            System.Console.WriteLine("    <path-to-compare>     path to file to spell check");
+            System.Console.WriteLine("    [path-to-dictionary]  path to file to use as dictionary");
+            System.Console.WriteLine("    --make                optional parameter to create dictionary file");
+            System.Console.WriteLine("");
         }
     }
 }
