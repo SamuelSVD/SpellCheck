@@ -1,0 +1,11 @@
+__history/
+__recovery/
+Win32/
+*.local
+SpellCheck/obj
+SpellCheck/bin
+.vs
+*.suo
+Installer/binaries
+*.pfx
+*.exe
