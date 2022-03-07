@@ -83,8 +83,8 @@ namespace SpellCheck
         {
             wordList = XMLUtils.LoadFromFile<WordList>(PATH);
             if (wordList == null) {
-                wordList = new WordList();
-                XMLUtils.SaveToFile(wordList, PATH);
+                System.Console.WriteLine(String.Format("Error parsing {0}", PATH));
+                Environment.Exit(0);
             }
             wordList.Sort();
         }
