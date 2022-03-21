@@ -20,7 +20,7 @@ namespace SpellCheck
                 StringSplitOptions.None
             );
             for (int i = 0; i<lines.Length; i++) {
-                string l = lines[i].Trim();
+                string l = lines[i].Replace(">","> ").Replace("<"," <").Trim();
                 if (l.Length > 0) {
                     sm.AddRange(CheckLine(l, i + 1));
                 }
