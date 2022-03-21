@@ -31,7 +31,7 @@ namespace SpellCheck
         {
             List<SpellMistake> sm = new List<SpellMistake>();
             string[] words = line.Split(
-                new string[] { " " },
+                new string[] { " ", "\t" },
                 StringSplitOptions.None
             );
             foreach (string word in words) {
